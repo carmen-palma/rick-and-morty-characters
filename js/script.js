@@ -8,7 +8,7 @@ function fetchCharacters(page) {
   fetch(`https://rickandmortyapi.com/api/character/?page=${page}`)
     .then(response => {
       if (!response.ok) {
-        throw new Error('Network response was not ok');
+        throw new Error('Error');
       }
       return response.json();
     })
@@ -16,7 +16,7 @@ function fetchCharacters(page) {
       showCharacters(data.results);
     })
     .catch(error => {
-      console.error('There has been a problem with your fetch operation:', error);
+      console.error('Error', error);
     });
 }
 
