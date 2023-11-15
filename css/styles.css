@@ -77,5 +77,25 @@ ul {
   list-style: none;
 }
 
+li {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
 
+.boton {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
 
+img {
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+.pagination {
+  text-align: center;
+  margin-bottom: 10px;
+}
